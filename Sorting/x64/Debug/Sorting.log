@@ -1,0 +1,12 @@
+﻿  Source.cpp
+D:\Projets CPP\Sorting\Sorting\Source.cpp(27,13): warning C4267: 'initialisation' : conversion de 'size_t' en 'int', perte possible de données
+D:\Projets CPP\Sorting\Sorting\Source.cpp(90,61): warning C4244: 'argument' : conversion de 'T' en 'T', perte possible de données
+          with
+          [
+              T=unsigned int
+          ]
+          and
+          [
+              T=float
+          ]
+  Sorting.vcxproj -> D:\Projets CPP\Sorting\x64\Debug\Sorting.exe
