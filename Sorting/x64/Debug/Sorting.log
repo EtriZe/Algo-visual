@@ -1,12 +1,19 @@
-﻿  Source.cpp
-D:\Projets CPP\Sorting\Sorting\Source.cpp(27,13): warning C4267: 'initialisation' : conversion de 'size_t' en 'int', perte possible de données
-D:\Projets CPP\Sorting\Sorting\Source.cpp(90,61): warning C4244: 'argument' : conversion de 'T' en 'T', perte possible de données
+﻿  Display.cpp
+D:\Projets CPP\Algo-visual\Sorting\Display.cpp(16,48): warning C4244: 'argument' : conversion de 'unsigned __int64' en 'T', perte possible de données
+          with
+          [
+              T=float
+          ]
+D:\Projets CPP\Algo-visual\Sorting\Display.cpp(15,24): warning C4244: 'argument' : conversion de 'unsigned __int64' en 'T', perte possible de données
+          with
+          [
+              T=float
+          ]
+D:\Projets CPP\Algo-visual\Sorting\Display.cpp(21,89): warning C4244: 'argument' : conversion de 'T' en 'float', perte possible de données
           with
           [
               T=unsigned int
           ]
-          and
-          [
-              T=float
-          ]
-  Sorting.vcxproj -> D:\Projets CPP\Sorting\x64\Debug\Sorting.exe
+D:\Projets CPP\Algo-visual\Sorting\Display.cpp(21,46): warning C4244: 'argument' : conversion de 'unsigned __int64' en 'float', perte possible de données
+D:\Projets CPP\Algo-visual\Sorting\Display.cpp(22,35): warning C4244: 'argument' : conversion de 'double' en 'float', perte possible de données
+  Sorting.vcxproj -> D:\Projets CPP\Algo-visual\x64\Debug\Sorting.exe

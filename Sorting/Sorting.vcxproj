@@ -133,6 +133,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Display.cpp" />
     <ClCompile Include="Sort.cpp" />
     <ClCompile Include="Source.cpp" />
   </ItemGroup>

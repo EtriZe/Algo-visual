@@ -1,15 +1,12 @@
 #include <iostream>
 #include <vector>
-#include "Sort.h"
 #include <chrono>
-#include <algorithm>
-#include <random>
+
 #include <SFML/Graphics.hpp>
 
-enum SortingType
-{
-	BubbleSort = 0,
-};
+#include "Sort.h"
+#include "Display.h"
+
 
 //CONST m'empêche de modifier le vecteur
 void DisplayArray(const std::vector<int>& arr)
@@ -32,39 +29,18 @@ void DisplayArray(const std::vector<int>& arr)
 
 }
 
-void Sorting(Sort& sort, SortingType sType, std::vector<int>& vect)
-{
-	switch (sType)
-	{
-	case BubbleSort:
-		sort.BubbleSort(vect);
-		break;
-	default:
-		std::cout << "Aucun type de sorting n'a été selectionné" << std::endl;
-	}
-}
 
-void FillVector(int vectSize, std::vector<int>& vect)
-{
-	for (int i = 0; i < vectSize; ++i)
-	{
-		vect.push_back(i);
-	}
-}
 
 int main()
 {
-	//std::vector<int> arr;
-	//FillVector(10000, arr);
 
+	// 
 	//Sort sort;
 
 	////-----------------------------
 	////Bubble sort :
 	// 
-	////Mélange le vecteur
-	//auto rng = std::default_random_engine{};
-	//std::shuffle(std::begin(arr), std::end(arr), rng);
+	
 	//DisplayArray(arr);
 
 	////Chrono
@@ -84,27 +60,10 @@ int main()
 
 
 	//return 0;
-		
-		sf::RenderWindow window(sf::VideoMode(1440, 720), "SFML works!");
+			
+	Display display;
+	display.Start();
+	
 
-		sf::RectangleShape line(sf::Vector2f(5, window.getSize().y/2));
-		line.setPosition(0, window.getSize().y - line.getSize().y);
-		//sf::CircleShape shape(100.f);
-		//shape.setFillColor(sf::Color::Green);
-
-		while (window.isOpen())
-		{
-			sf::Event event;
-			while (window.pollEvent(event))
-			{
-				if (event.type == sf::Event::Closed)
-					window.close();
-			}
-
-			window.clear();
-			window.draw(line);
-			window.display();
-		}
-
-		return 0;
+	return 0;
 }
